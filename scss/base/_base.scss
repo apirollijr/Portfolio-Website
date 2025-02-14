@@ -1,0 +1,22 @@
+@use 'variables' as vars;
+
+
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: vars.$color-muted-teal;
+  color: vars.$color-black;
+  font-size: vars.$font-size-base;
+  line-height: vars.$line-height-4;
+
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

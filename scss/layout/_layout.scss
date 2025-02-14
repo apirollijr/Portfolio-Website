@@ -1,0 +1,59 @@
+@use './base/variables' as vars;
+
+
+/* Layout styles */
+.container {
+  max-width: vars.$container-max-width;
+  margin: 0 auto;
+  padding: 0 vars.$container-padding;
+}
+
+/* Home Page */
+.home-content {
+  font-size: vars.$home-content-font-size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin: vars.$home-content-margin;
+  max-width: vars.$container-max-width;
+  background-color: vars.$color-soft-beige;
+  border-radius: vars.$border-radius;
+  padding: vars.$home-content-padding;
+}
+
+.home-content div {
+  flex: 1;
+}
+
+.home-content p {
+  color: vars.$color-black;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-indent: vars.$text-indent;
+}
+
+/* About Section */
+.about-content {
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin: vars.$home-content-margin;
+  max-width: vars.$container-max-width;
+  background-color: vars.$color-soft-beige;
+  border-radius: vars.$border-radius;
+  padding: vars.$home-content-padding;
+}
+
+/* Media Queries */
+@media (max-width: vars.$media-query-large) {
+  .portfolio-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: vars.$media-query-small) {
+  .portfolio-content {
+    grid-template-columns: 1fr;
+  }
+}

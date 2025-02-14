@@ -1,0 +1,43 @@
+@use 'variables' as vars;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'IBM Plex Sans', serif;
+  margin: 0 0 10px;
+}
+
+p {
+  font-size: vars.$font-size-base;
+  line-height: vars.$line-height-4;
+  margin-bottom: 20px;
+  font-family: 'IBM Plex Sans', serif;
+}
+
+h1 {
+  font-size: vars.$font-size-xxlarge;
+  line-height: vars.$line-height-1;
+}
+
+h2 {
+  font-size: vars.$font-size-xlarge;
+  line-height: vars.$line-height-2;
+}
+
+h3 {
+  font-size: vars.$font-size-large;
+  line-height: vars.$line-height-3;
+}
+
+h4 {
+  font-size: vars.$font-size-base;
+  line-height: vars.$line-height-4;
+}
+
+h5 {
+  font-size: vars.$font-size-small;
+  line-height: vars.$line-height-5;
+}
+
+h6 {
+  font-size: vars.$font-size-small;
+  line-height: vars.$line-height-6;
+}

@@ -1,0 +1,499 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #90AEAD;
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "IBM Plex Sans", serif;
+  margin: 0 0 10px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-family: "IBM Plex Sans", serif;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+h5 {
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+h6 {
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+
+/* Layout styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Home Page */
+.home-content {
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  margin: 10px;
+  max-width: 1200px;
+  background-color: #FBE9D0;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.home-content div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.home-content p {
+  color: #000;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-indent: 1rem;
+}
+
+/* About Section */
+.about-content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  margin: 10px;
+  max-width: 1200px;
+  background-color: #FBE9D0;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .portfolio-content {
+    -ms-grid-columns: 1fr 1fr; 
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+@media (max-width: 576px) {
+  .portfolio-content {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+/* Header */
+.page-header {
+  background-color: #244855;
+  color: #FBE9D0;
+  padding: 10px 0;
+  font-family: "IBM Plex Sans", serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-header a {
+  color: #FBE9D0;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.name-logo {
+  font-family: "Love Light", serif;
+  font-size: 2.5em;
+  color: #FBE9D0;
+  margin: 0 15px 0 0;
+}
+
+.name-logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Main Nav Bar */
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  color: #FBE9D0;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  -webkit-transition: color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: color 0.3s ease, -webkit-transform 0.3s ease;
+  -o-transition: color 0.3s ease, transform 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: #E64833;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/* Footer */
+.page-footer {
+  padding: 30px 0;
+  text-align: center;
+  color: #FBE9D0;
+}
+
+footer {
+  background-color: #244855;
+  color: #FBE9D0;
+  padding: 10px 0;
+}
+
+.page-footer img {
+  margin: 0 10px;
+}
+
+/* Module Styles */
+/* Selfie Image */
+.selfie {
+  width: 70%;
+  border-radius: 50%;
+  margin: 50px;
+}
+
+/* .ctaButton a Styles */
+.ctaButton {
+  background-color: #244855;
+  color: #FBE9D0;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
+  -o-transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  margin: auto;
+  text-decoration: none;
+  border: none;
+  padding: 10px 20px;
+}
+
+.ctaButton:hover {
+  background-color: #E64833;
+  color: #FBE9D0;
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+  opacity: 0.8;
+}
+
+/* Contact Form */
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #FBE9D0;
+  border-radius: 25px;
+}
+
+.contact-form label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #244855;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form input[type=submit] {
+  background-color: #244855;
+  color: #FBE9D0;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
+  -o-transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+  border-radius: 5px;
+}
+
+.contact-form input[type=submit]:hover {
+  background-color: #E64833;
+  color: #FBE9D0;
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
+  opacity: 0.8;
+}
+
+/* Contact information */
+.contact-info {
+  background-color: #FBE9D0;
+  text-align: center;
+  color: #000;
+  padding: 20px;
+  margin: 20px 0 0 0;
+  border-radius: 25px;
+}
+
+.contact-info a {
+  color: #000;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #E64833;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #244855;
+}
+
+th {
+  background-color: #244855;
+  color: #FBE9D0;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #90AEAD;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #FBE9D0;
+}
+
+/* Portfolio Content */
+.portfolio-content {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.portfolio-item {
+  background-color: #FBE9D0;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #90AEAD;
+}
+
+.portfolio-item h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.portfolio-item p {
+  font-size: 1em;
+  color: #244855;
+}
+
+/* SVG Styles */
+/* Thank You! Styles */
+.svg-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+  position: relative;
+}
+
+@-webkit-keyframes waveHand {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes waveHand {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes slideText {
+  0% {
+    -webkit-transform: translateX(17px);
+            transform: translateX(17px);
+  }
+  100% {
+    -webkit-transform: translateX(-17px);
+            transform: translateX(-17px);
+  }
+}
+@keyframes slideText {
+  0% {
+    -webkit-transform: translateX(17px);
+            transform: translateX(17px);
+  }
+  100% {
+    -webkit-transform: translateX(-17px);
+            transform: translateX(-17px);
+  }
+}
+#hand {
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: waveHand 1s infinite ease-in-out;
+          animation: waveHand 1s infinite ease-in-out;
+}
+
+#thankYouText {
+  -webkit-animation: slideText 3s ease-in-out infinite alternate;
+          animation: slideText 3s ease-in-out infinite alternate;
+}

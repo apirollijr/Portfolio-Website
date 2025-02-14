@@ -1,0 +1,16 @@
+{
+  "name": "cf-portfolio",
+  "version": "1.0.0",
+  "scripts": {
+    "sass": "sass --watch scss/main.scss css/main.css --load-path=scss",
+    "start": "live-server ."
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "sass": "^1.84.0",
+    "stylelint-config-standard": "^37.0.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
