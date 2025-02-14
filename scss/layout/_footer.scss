@@ -1,0 +1,19 @@
+@use './base/variables' as vars;
+
+
+/* Footer */
+.page-footer {
+  padding: 30px 0;
+  text-align: center;
+  color: vars.$color-soft-beige;
+}
+
+footer {
+  background-color: vars.$color-dark-blue;
+  color: vars.$color-soft-beige;
+  padding: 10px 0;
+}
+
+.page-footer img {
+  margin: 0 10px;
+}
