@@ -2,17 +2,17 @@
 
 
 /* Header */
-.page-header {
+.header {
   background-color: vars.$color-dark-blue;
   color: vars.$color-soft-beige;
   padding: 10px 0;
   font-family: 'IBM Plex Sans', serif;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center
 }
 
-.page-header a {
+.header a {
   color: vars.$color-soft-beige;
   text-decoration: none;
   font-weight: vars.$font-weight-bold;

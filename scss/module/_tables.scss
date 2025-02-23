@@ -1,0 +1,27 @@
+@use './base/variables' as vars;
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  th, td {
+    padding: 12px;
+    border: 1px solid vars.$color-dark-blue;
+  }
+  
+  th {
+    background-color: vars.$color-dark-blue;
+    color: vars.$color-soft-beige;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: vars.$color-muted-teal;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: vars.$color-soft-beige;
+  }

@@ -1,0 +1,11 @@
+@use './base/variables' as vars;
+
+.theme-dark {
+    background-color: vars.$color-dark-blue;
+    color: vars.$color-soft-beige;
+  }
+  
+  .theme-light {
+    background-color: vars.$color-soft-beige;
+    color: vars.$color-dark-blue;
+}

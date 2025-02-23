@@ -1,22 +1,15 @@
 @use 'variables' as vars;
 
 
-
-*::before,
-*::after {
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: vars.$color-muted-teal;
-  color: vars.$color-black;
-  font-size: vars.$font-size-base;
-  line-height: vars.$line-height-4;
-
-
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
+  font-family: Arial, sans-serif;
+  background-color: #d1dad3;
+  color: #333;
+  line-height: 1.6;
 }

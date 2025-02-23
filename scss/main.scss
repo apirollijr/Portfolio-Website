@@ -7,7 +7,12 @@
 @use 'layout/header';
 @use 'layout/footer';
 
-@use 'module/module';
+@use 'module/buttons';
+@use 'module/contact_form';
+@use 'module/tables';
+@use 'module/hero';
+@use 'module/cards';
+@use 'module/svgs';
 
 @use 'state/state';
 

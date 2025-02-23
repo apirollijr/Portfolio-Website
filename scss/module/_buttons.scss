@@ -1,0 +1,24 @@
+@use './base/variables' as vars;
+
+.ctaButton {
+    background-color: vars.$color-dark-blue;
+    color: vars.$color-soft-beige;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+  }
+  
+  .ctaButton:hover {
+    background-color: vars.$color-bright-red;
+    color: vars.$color-soft-beige;
+    transform: scale(1.05);
+    opacity: 0.8;
+  }

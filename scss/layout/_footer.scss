@@ -1,19 +1,13 @@
 @use './base/variables' as vars;
 
 
-/* Footer */
-.page-footer {
+.footer {
   padding: 30px 0;
   text-align: center;
   color: vars.$color-soft-beige;
-}
+  background-color: vars.$color-dark-blue; // Moved from `footer` selector
 
-footer {
-  background-color: vars.$color-dark-blue;
-  color: vars.$color-soft-beige;
-  padding: 10px 0;
-}
-
-.page-footer img {
-  margin: 0 10px;
+  img {
+    margin: 0 10px; // Nested inside `.footer` to target images within it
+  }
 }
