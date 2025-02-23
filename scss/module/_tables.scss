@@ -1,5 +1,10 @@
 @use './base/variables' as vars;
 
+.table-content {
+  color: vars.$color-black;
+  text-align: center;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -11,6 +16,7 @@ table {
   th, td {
     padding: 12px;
     border: 1px solid vars.$color-dark-blue;
+  
   }
   
   th {

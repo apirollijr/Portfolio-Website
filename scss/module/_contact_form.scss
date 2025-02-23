@@ -8,6 +8,7 @@
     padding: 20px;
     background-color: vars.$color-soft-beige;
     border-radius: 25px;
+    width: vars.$container-width;
   }
   
   .contact-form label {
@@ -51,7 +52,7 @@
   
   /* Contact information */
   .contact-info {
-    background-color: vars.$color-soft-beige;
+    background-color: vars.$color-muted-teal;
     text-align: center;
     color: vars.$color-black;
     padding: 20px;

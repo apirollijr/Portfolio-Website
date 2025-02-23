@@ -3,9 +3,20 @@
 
 /* Layout styles */
 .container {
-  max-width: vars.$container-max-width;
+  width: vars.$container-width;
   margin: 0 auto;
   padding: 0 vars.$container-padding;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Home Page */
@@ -20,6 +31,7 @@
   background-color: vars.$color-soft-beige;
   border-radius: vars.$border-radius;
   padding: vars.$home-content-padding;
+  width: vars.$container-width;
 }
 
 .home-content div {
@@ -33,17 +45,23 @@
   text-indent: vars.$text-indent;
 }
 
-/* About Section */
-.about-content {
+/* About Page */
+.about {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: left;
-  margin: vars.$home-content-margin;
-  max-width: vars.$container-max-width;
-  background-color: vars.$color-soft-beige;
-  border-radius: vars.$border-radius;
-  padding: vars.$home-content-padding;
+  text-align: justify;
+  color: vars.$color-black;
+    
+  p {
+    margin-bottom: 20px;
+    text-indent: vars.$text-indent; 
+    font-size: vars.$font-size-large;
+    line-height: vars.$line-height-4;
+  }
 }
+
 
 /* Media Queries */
 @media (max-width: vars.$media-query-large) {

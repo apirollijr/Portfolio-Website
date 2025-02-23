@@ -7,9 +7,13 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #d1dad3;
-  color: #333;
-  line-height: 1.6;
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: vars.$color-muted-teal;
+  color: vars.$color-dark-blue;
 }
