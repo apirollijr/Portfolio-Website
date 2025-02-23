@@ -1,4 +1,5 @@
-@use './base/variables' as vars;
+@use '../base/variables' as vars;
+@use '../base/mixins' as mixins;
 
 .theme-dark {
     background-color: vars.$color-dark-blue;

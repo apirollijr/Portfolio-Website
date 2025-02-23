@@ -1,10 +1,29 @@
 @use '../base/variables' as vars;
+@use '../base/mixins' as mixins;
 
 .portfolio-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   gap: 50px; 
   padding: 20px;
+
+  @include mixins.respond-to(medium) {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px; 
+    padding: 15px; 
+  }
+
+  @include mixins.respond-to(small) {
+    grid-template-columns: 1fr; 
+    gap: 30px; 
+    padding: 10px; 
+  }
+
+  @include mixins.respond-to(xsmall) {
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+    padding: 5px; 
+  }
 }
 
 .portfolio-item {
@@ -14,7 +33,23 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;  
   padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: vars.$font-size-xlarge;
+  
+  @include mixins.respond-to(large) {
+    padding: 30px; 
+    font-size: vars.$font-size-large; 
+  }
+
+  @include mixins.respond-to(medium) {
+    padding: 40px; 
+    font-size: vars.$font-size-base; 
+  }
+
+  @include mixins.respond-to(small) {
+    padding: 40px; 
+    font-size: vars.$font-size-small; 
+  }
 }
 
 .portfolio-item:hover {

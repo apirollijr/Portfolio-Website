@@ -1,13 +1,23 @@
-@use './base/variables' as vars;
+@use '../base/variables' as vars;
+@use '../base/mixins' as mixins;
 
 
 /* Thank You! Styles */
 .svg-container {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 80vh;
   position: relative;
+
+  @include mixins.respond-to(small) {
+    height: 60vh; 
+  }
+
+  @include mixins.respond-to(xsmall) {
+    height: 50vh; 
+  }
 }
 
 @keyframes waveHand {
@@ -24,8 +34,24 @@
 #hand {
   transform-origin: center;
   animation: waveHand 1s infinite ease-in-out;
+
+  @include mixins.respond-to(small) {
+    width: 50%; 
+  }
+
+  @include mixins.respond-to(xsmall) {
+    width: 40%; 
+  }
 }
 
 #thankYouText {
   animation: slideText 3s ease-in-out infinite alternate;
+
+  @include mixins.respond-to(small) {
+    font-size: vars.$font-size-large; 
+  }
+
+  @include mixins.respond-to(xsmall) {
+    font-size: vars.$font-size-base; 
+  }
 }
