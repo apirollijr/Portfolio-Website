@@ -1,0 +1,31 @@
+@use './base/variables' as vars;
+
+
+/* Thank You! Styles */
+.svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  position: relative;
+}
+
+@keyframes waveHand {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(20deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes slideText {
+  0% { transform: translateX(17px); }
+  100% { transform: translateX(-17px); }
+}
+
+#hand {
+  transform-origin: center;
+  animation: waveHand 1s infinite ease-in-out;
+}
+
+#thankYouText {
+  animation: slideText 3s ease-in-out infinite alternate;
+}

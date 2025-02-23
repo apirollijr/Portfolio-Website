@@ -1,0 +1,12 @@
+@use './base/variables' as vars;
+
+
+.is-hidden {
+    display: none;
+  }
+  
+  .is-active {
+    font-weight: bold;
+    color: vars.$color-dark-blue;
+  }
+  
