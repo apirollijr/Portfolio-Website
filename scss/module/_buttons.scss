@@ -1,4 +1,5 @@
-@use './base/variables' as vars;
+@use '../base/variables' as vars;
+@use '../base/mixins' as mixins;
 
 .ctaButton {
     background-color: vars.$color-dark-blue;
@@ -14,6 +15,19 @@
     text-decoration: none;
     border: none;
     padding: 10px 20px;
+
+    @include mixins.respond-to(small) {
+      width: 100%; 
+      padding: 10px; 
+      font-size: vars.$font-size-xlarge; 
+    }
+  
+    @include mixins.respond-to(xsmall) {
+      width: 100%; 
+      padding: 8px; 
+      font-size: vars.$font-size-large; 
+    }
+
   }
   
   .ctaButton:hover {
