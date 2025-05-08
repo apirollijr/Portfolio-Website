@@ -1,116 +1,112 @@
 @use "../base/variables" as vars;
-@use "../base/mixins" as mixins; 
 
-/* Header */
 .header {
   background-color: vars.$color-dark-blue;
   color: vars.$color-soft-beige;
-  padding: 10px 0;
-  font-family: 'IBM Plex Sans', serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
 
-  @include mixins.respond-to(xsmall) {
-    padding: 5px 0;
-    flex-direction: column;
-    .logo {
-      width: 80px;
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-    .name-logo {
-      font-size: vars.$font-size-xlarge;
-      margin: 0;
-    }
-    .main-nav {
-      .nav-list {
-        flex-direction: column;
-        align-items: center;
-        li {
-          margin: 5px 0;
-        }
-      }
-    }
+  .header-inner {
+    max-width: vars.$container-max-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
   }
-
-  @include mixins.respond-to(small) {
-    flex-direction: column;
-    padding: 5px 0;
-  }
-
-  @include mixins.respond-to(medium) {
-    padding: 8px 0;
-  }
-
-}
-
-.header a {
-  color: vars.$color-soft-beige;
-  text-decoration: none;
-  font-weight: vars.$font-weight-bold;
-
 }
 
 .logo {
-  width: 100px;
-  height: auto;
-  margin-right: 15px;
-
-  @include mixins.respond-to(xsmall) {
-    padding: 5px 0;
-  }
-
-  @include mixins.respond-to(small) {
-    flex-direction: column;
-    padding: 5px 0;
-  }
-
-  @include mixins.respond-to(medium) {
-    padding: 8px 0;
-  }
-
+  height: 50px;
+  margin-right: 1rem;
 }
 
 .name-logo {
-  font-family: 'Love Light', serif;
-  font-size: 2.5em;
-  color: vars.$color-soft-beige;
-  margin: 0 15px 0 0;
+  font-family: 'Love Light', cursive;
+  font-size: 1.5rem;
+  margin-right: auto; // pushes the nav to the right
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
-.name-logo a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Main Nav Bar */
 .main-nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  width: auto;
 }
 
 .nav-list {
   display: flex;
+  gap: 2rem;
   list-style: none;
   margin: 0;
   padding: 0;
+
+  a {
+    text-decoration: none;
+    color: vars.$color-soft-beige;
+    font-weight: bold;
+  }
 }
 
-.nav-list li {
-  margin: 0 15px;
-}
 
-.nav-list a {
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
   color: vars.$color-soft-beige;
-  text-decoration: none;
-  font-size: 1.2em;
-  font-weight: bold;
-  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
 }
 
-.nav-list a:hover {
-  color: vars.$color-bright-red;
-  transform: scale(1.1);
+@media (max-width: 768px) {
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .name-logo {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: vars.$color-soft-beige;
+    cursor: pointer;
+  }
+
+  .main-nav {
+    display: none;
+    width: 100%;
+    background-color: vars.$color-dark-blue;
+
+    &.open {
+      display: block;
+    }
+
+    .nav-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem 2rem;
+      margin: 0;
+      list-style: none;
+
+      a {
+        color: vars.$color-soft-beige;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+  }
 }

@@ -11,10 +11,18 @@
 html, body {
   height: 100%;
   margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
   font-family: 'IBM Plex Sans', sans-serif;
   background-color: vars.$color-muted-teal;
   color: vars.$color-dark-blue;
+
+}
+
+body.wrapper {
+  flex: 1; // Fills available space between header and footer
 }
